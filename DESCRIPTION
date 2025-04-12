@@ -1,0 +1,36 @@
+Package: DTModelR
+Title: Dynamic Topic Model Implementation for R
+Version: 0.1.0
+Date: 2025-04-11
+Authors@R: 
+    person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+Description: An R implementation of the Dynamic Topic Model (DTM) based on the 
+    tomotopy C++ code. DTM allows tracking how topics evolve over time in a 
+    document collection by modeling each time slice with its own topic model,
+    while ensuring smooth topic evolution between adjacent time slices. This 
+    package provides functions for creating, training, and analyzing dynamic
+    topic models, as well as visualization tools for exploring topic evolution.
+License: MIT + file LICENSE
+URL: https://github.com/yourusername/DTModelR
+BugReports: https://github.com/yourusername/DTModelR/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    Rcpp (>= 1.0.7),
+    methods
+LinkingTo: 
+    Rcpp,
+    BH,
+    RcppEigen
+Suggests: 
+    ggplot2,
+    viridis,
+    igraph,
+    ggraph,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+SystemRequirements: C++14, GNU make
